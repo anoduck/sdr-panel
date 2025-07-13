@@ -1,0 +1,38 @@
+[project]
+name = "sdr-panel"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "astropy==5.3.4",
+    "crispy-bootstrap5>=2025.6",
+    "django==4.2.16",
+    "django-admin-tools>=0.9.3",
+    "django-bootstrap-icons>=0.9.0",
+    "django-cleanup>=9.0.0",
+    "django-crispy-forms>=2.4",
+    "django-debug-toolbar>=5.2.0",
+    "django-extensions>=4.1",
+    "humanize>=4.12.3",
+    "matplotlib>=3.10.3",
+    "mysqlclient>=2.2.7",
+    "numpy>=1.26.4",
+    "paho-mqtt>=2.1.0",
+    "pillow>=11.3.0",
+    "psycopg>=3.2.9",
+    "scipy>=1.16.0",
+    "sox==1.4.1",
+    "tflite-runtime>=2.14.0",
+    "tuya-iot-py-sdk>=0.6.6",
+    "tzlocal>=5.3.1",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+docstring-code-format = true
+
+[tool.ruff.lint]
+ignore = ["E501", "E741", "E402", "E722"]
